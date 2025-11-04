@@ -14,14 +14,12 @@ email-validator==2.2.0
 python-dotenv==1.0.1
 
 # ---- ML / CV ----
-numpy==1.26.4              # ổn cho TF 2.20 + scikit-learn 1.5
+numpy>=1.26,<2.0
 opencv-python==4.10.0.84
 Pillow==10.4.0
 scikit-learn==1.5.1
 
 # ---- TensorFlow (CPU) ----
 tensorflow-cpu==2.20.0
-protobuf==4.25.3           # tránh kéo bản 5.x gây xung đột
-h5py>=3.10,<4              # tránh bản quá cũ
-# KHÔNG thêm 'keras' riêng -> dùng tf.keras
-# KHÔNG thêm tensorflow-io trừ khi bạn thật sự cần
+# KHÔNG pin protobuf: để pip chọn >=5.28 tự động
+# KHÔNG cài 'keras' rời; dùng tf.keras
