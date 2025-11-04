@@ -1,0 +1,14 @@
+{
+  "cnn_model_path": "d:\\Workspace\\breast_cancer_cnn_model.h5",
+  "layer_ref": {
+    "type": "index",
+    "value": -4
+  },
+  "input_from_first_layer": true,
+  "target_size": [
+    224,
+    224,
+    3
+  ],
+  "normalization": "scale_0_1"
+}
